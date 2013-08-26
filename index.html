@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content = "height = device-height, width = 420, user-scalable = no" />
+	<title>WebIOPi | Demo</title>
+	<script type="text/javascript" src="/webiopi.js"></script>
+	<script type="text/javascript">
+	webiopi().ready(function() {
+		var button;
+
+		// create a button which call PrintTime
+		button = webiopi().createMacroButton("macro", "<", "MoveLeft");
+		$("#middle").append(button); // append button to middle div
+
+		button = webiopi().createMacroButton("macro", "X", "Stop");
+		$("#middle").append(button); // append button to middle div
+
+		button = webiopi().createMacroButton("macro", ">", "MoveRight");
+		$("#middle").append(button); // append button to middle div
+
+		button = webiopi().createMacroButton("macro", "/\\", "MoveForward");
+		$("#up").append(button); // append button to up div
+
+		button = webiopi().createMacroButton("macro", "\\/", "MoveBackward");
+		$("#down").append(button); // append button to down div
+
+		webiopi().refreshGPIO(true);
+	});
+
+
+	</script>
+	<style type="text/css">
+		button {
+			margin: 5px 5px 5px 5px;
+			width: 45px;
+			height: 45px;
+			font-size: 24pt;
+			font-weight: bold;
+			color: black;
+		}
+
+		.LOW {
+			background-color: White;
+		}
+
+		.HIGH {
+			background-color: Red;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="content" align="center">
+		<div id="up"></div>
+		<div id="middle"></div>
+		<div id="down"></div>
+   	</div>
+
+</body>
+</html>

@@ -25,9 +25,11 @@ myscript = /usr/share/webiopi/htdocs2/app/macros/script.py
 $ sudo /etc/init.d/webiopi restart
 
 $ cd /usr/share/webiopi/htdocs/app
+
 $ sudo git clone https://github.com/rasplay/clickpirc.git
 
 Run Web Brower, supported HTML5 (like Chrome browser)
+
 "http://[raspberrypi-IP]/app/clickpirc"
 
 Enjoy!!  

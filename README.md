@@ -19,6 +19,7 @@ SW
 I'm using in webiopi macro function.
 
 $ sudo vi /etc/webiopi/config
+
 myscript = /usr/share/webiopi/htdocs2/app/macros/script.py
 
 $ sudo /etc/init.d/webiopi restart

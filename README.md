@@ -20,7 +20,7 @@ I'm using in webiopi macro function.
 
 $ sudo vi /etc/webiopi/config
 
-myscript = /usr/share/webiopi/htdocs/app/macros/script.py
+myscript = /usr/share/webiopi/htdocs/app/clicpirc/script.py
 
 $ sudo /etc/init.d/webiopi restart
 

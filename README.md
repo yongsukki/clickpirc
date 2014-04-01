@@ -16,6 +16,10 @@ HW
 SW
  1. Webiopi, it is Raspberry IO Web Software using Python, HTML5, JS.
 
+$ cd /usr/share/webiopi/htdocs/app
+
+$ sudo git clone https://github.com/rasplay/clickpirc.git
+
 I'm using in webiopi macro function.
 
 $ sudo vi /etc/webiopi/config
@@ -23,10 +27,6 @@ $ sudo vi /etc/webiopi/config
 myscript = /usr/share/webiopi/htdocs/app/clickpirc/script.py
 
 $ sudo /etc/init.d/webiopi restart
-
-$ cd /usr/share/webiopi/htdocs/app
-
-$ sudo git clone https://github.com/rasplay/clickpirc.git
 
 Run Web Brower, supported HTML5 (like Chrome browser)
 

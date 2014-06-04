@@ -45,6 +45,8 @@ def destroy():
 # A macro without args which return nothing
 @webiopi.macro
 def MoveLeft():
+    Stop()
+    webiopi.sleep(1)
     GPIO.digitalWrite(M1_A, GPIO.LOW)
     GPIO.digitalWrite(M1_B, GPIO.LOW)
     GPIO.digitalWrite(M2_A, GPIO.LOW)
@@ -52,6 +54,8 @@ def MoveLeft():
 
 @webiopi.macro
 def MoveRight():
+    Stop()
+    webiopi.sleep(1)
     GPIO.digitalWrite(M1_A, GPIO.LOW)
     GPIO.digitalWrite(M1_B, GPIO.HIGH)
     GPIO.digitalWrite(M2_A, GPIO.LOW)
@@ -59,6 +63,8 @@ def MoveRight():
 
 @webiopi.macro
 def MoveForward():
+    Stop()
+    webiopi.sleep(1)
     GPIO.digitalWrite(M1_A, GPIO.LOW)
     GPIO.digitalWrite(M1_B, GPIO.HIGH)
     GPIO.digitalWrite(M2_A, GPIO.LOW)
@@ -66,6 +72,8 @@ def MoveForward():
 
 @webiopi.macro
 def MoveBackward():
+    Stop()
+    webiopi.sleep(1)
     GPIO.digitalWrite(M1_A, GPIO.HIGH)
     GPIO.digitalWrite(M1_B, GPIO.LOW)
     GPIO.digitalWrite(M2_A, GPIO.HIGH)
@@ -77,3 +85,4 @@ def Stop():
     GPIO.digitalWrite(M1_B, GPIO.LOW)
     GPIO.digitalWrite(M2_A, GPIO.LOW)
     GPIO.digitalWrite(M2_B, GPIO.LOW)
+    webiopi.sleep(1)

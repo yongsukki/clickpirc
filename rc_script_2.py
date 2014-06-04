@@ -81,4 +81,4 @@ def Stop():
     GPIO.digitalWrite(M1_B, GPIO.LOW)
     GPIO.digitalWrite(M2_A, GPIO.LOW)
     GPIO.digitalWrite(M2_B, GPIO.LOW)
-    webiopi.sleep(1)
+    webiopi.sleep(0.1)
